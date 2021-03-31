@@ -18,8 +18,8 @@ while pergunta != 'N':
     print('--' * 21)
     print('Formato de uma Equação do Segundo Grau:')
     print(f'          {azul} ax² + bx + c = 0 {semcor}')
-
     print()
+    
     a = int(input(f'{branco}Digite o valor de A:{semcor} '))
 
     if a == 0:
@@ -49,7 +49,7 @@ while pergunta != 'N':
         x = -b / (2 * a)
         print()
         print(f'{azul}x = {x} {semcor}')
-        
+
     elif delta > 0:
         print(f'> {verde}Delta = {delta} {semcor}')
         print(f'{vermelho}Delta é maior que zero!{semcor}')
