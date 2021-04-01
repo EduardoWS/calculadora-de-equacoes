@@ -14,7 +14,7 @@ print(f'{azul} Calculadora de Equações do Segundo Grau {semcor}   v3.1')
 pergunta = 'S'
 
 while pergunta != 'N':
-
+    
     print('--' * 21)
     print('Formato de uma Equação do Segundo Grau:')
     print(f'          {azul} ax² + bx + c = 0 {semcor}')
@@ -23,12 +23,23 @@ while pergunta != 'N':
     a = int(input(f'{branco}Digite o valor de A:{semcor} '))
 
     if a == 0:
+        print()
         print(f'{vermelho}Não existe função do segundo grau \ncom A nulo.{semcor}')
         print('--' * 21)
-        exit()
-    
+        print()
+        pergunta = str(input(f'>> {branco}Novos valores? [S/N]{semcor} ')).upper().strip()
+        print()
+        if pergunta == 'S':
+            continue
+        else:
+            print('Encerrando...')
+            sleep(2)
+            print('--' * 21)
+            exit()
+
     b = int(input(f'{branco}Digite o valor de B:{semcor} '))
     c = int(input(f'{branco}Digite o valor de C:{semcor} '))
+
     delta = (b**2) -4 * a * c
 
     print()
@@ -64,4 +75,6 @@ while pergunta != 'N':
     pergunta = str(input(f'>> {branco}Novos valores? [S/N]{semcor} ')).upper().strip()
     print()
 
+print('Encerrando...')
+sleep(2)
 print('--' * 21)
