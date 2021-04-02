@@ -5,4 +5,4 @@ Essa calculadora é capaz de calcular qualquer equação do segundo grau e mostr
 
 ## Veja este Gif mostrando todas as funcionalidades dela:
 
-![Calculadora agr vai3](https://user-images.githubusercontent.com/81593054/113432094-24c12980-93b3-11eb-907b-a9732b24ea31.gif)
+![Calculadora agr vai2](https://user-images.githubusercontent.com/81593054/113432297-82ee0c80-93b3-11eb-9754-976847fb7765.gif)
